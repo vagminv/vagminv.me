@@ -1,0 +1,27 @@
+{
+  "name": "starterpack-vagminv",
+  "version": "1.0.0",
+  "description": "TODO: short project description, some screenshots",
+  "homepage": "https://github.com/dartmouth-cs52/starterpack-vagminv#readme",
+  "bugs": {
+    "url": "https://github.com/dartmouth-cs52/starterpack-vagminv/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dartmouth-cs52/starterpack-vagminv.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}
