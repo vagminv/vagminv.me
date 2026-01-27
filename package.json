@@ -43,6 +43,7 @@
     "vite-plugin-favicon": "^1.0.8"
   },
   "dependencies": {
-    "jquery": "^4.0.0"
+    "jquery": "^4.0.0",
+    "nvm": "^0.0.4"
   }
 }
