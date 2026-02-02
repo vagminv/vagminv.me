@@ -45,10 +45,6 @@
     "@vitejs/plugin-react": "^5.1.2",
     "axios": "^1.13.4",
     "lodash.debounce": "^4.0.8",
-<<<<<<< HEAD
-=======
-    "nvm": "^0.0.4",
->>>>>>> 442cd77137a8f3a4006f0f955d0434d2da83c9d8
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router": "^7.13.0"
