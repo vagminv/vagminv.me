@@ -12,7 +12,7 @@ export default [
   pluginReactHooks.configs.flat.recommended,
   pluginJsxA11y.flatConfigs.recommended,
   pluginImport.flatConfigs.recommended,
-  stylistic.configs.recommended,
+  // stylistic.configs.recommended, // Disabled for flexibility
 
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
@@ -32,6 +32,7 @@ export default [
       },
     },
     rules: {
+      'react/react-in-jsx-scope': 0,
       'react/jsx-uses-react': 2,
       'react/jsx-uses-vars': 2,
       'react/prop-types': 0,
