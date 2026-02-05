@@ -8,22 +8,17 @@ export const personalInfo: PersonalInfo = {
 }
 
 export const socialLinks: SocialLink[] = [
-  { type: "email", url: "mailto:vagmin.viswanathan@gmail.com", icon: "Mail" },
-  { type: "linkedin", url: "https://linkedin.com/in/vagmin-viswanathan", icon: "Linkedin" },
-  { type: "github", url: "https://github.com/vagminv", icon: "Github" },
-  { type: "website", url: "https://vagminv.me", icon: "Globe" }
+  { type: "linkedin", url: "https://linkedin.com/in/vagmin-viswanathan", icon: "/logos/linkedin.png" },
+  { type: "github", url: "https://github.com/vagminv", icon: "Github" }
 ]
 
 export const about: string[] = [
-  "Co-founder @ CaseUp (Simulating consulting interviews with AI).",
-  "Studying Computer Science & Physics @ Dartmouth College.",
-  "President of Quantum Computing Club; interested in AI Agents, Deep Learning, and Quantum Systems.",
-  "Previously built onboarding agents at Amazon and data pipelines at Millennium Management."
+  "The task is not to see what has never been seen before, but to think what has never been thought before about what you see everyday."
 ]
 
 export const education: Education = {
   institution: "Dartmouth College",
-  logo: "/logos/dartmouth-logo.png",
+  logo: "/logos/dartmouth.png",
   degree: "Bachelor of Arts in Computer Science and Physics",
   date: "Expected Mar 2026",
   gpa: "3.87 / 4.00",
@@ -50,7 +45,7 @@ export const workExperience: WorkExperience[] = [
   },
   {
     company: "Amazon",
-    logo: "/logos/amazon-logo.png",
+    logo: "/logos/amazon.png",
     role: "Software Development Engineering Intern",
     date: "Jun 2025 - Sep 2025",
     description: [
@@ -60,7 +55,7 @@ export const workExperience: WorkExperience[] = [
   },
   {
     company: "Millennium Management",
-    logo: "/logos/millennium-logo.png",
+    logo: "/logos/millennium.png",
     role: "Data Science Intern",
     date: "Jun 2024 - Aug 2024",
     description: [
@@ -70,7 +65,7 @@ export const workExperience: WorkExperience[] = [
   },
   {
     company: "FitzLab",
-    logo: "/logos/fitzlab-logo.png",
+    logo: "/logos/fitzlab.png",
     role: "Presidential Scholar",
     date: "Aug 2023 - May 2024",
     description: [
@@ -104,16 +99,14 @@ export const projects: Project[] = [
 ]
 
 export const hobbies: string[] = [
-  "Chess",
-  "Cooking",
-  "Coffee",
-  "Quantum Computing",
-  "Reading",
-  "Hiking"
+  "Skiing",
+  "Strategy games",
+  "Table tennis",
+  "Coffee"
 ]
 
 export const contact: Contact = {
-  text: "Reach out via email or connect on LinkedIn/GitHub.",
+  text: "Always looking to build. Feel free to reach out.",
   email: "vagmin.viswanathan@gmail.com"
 }
 

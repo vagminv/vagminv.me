@@ -3,12 +3,10 @@ import { about } from '../data/content'
 function About() {
   return (
     <section className="section">
-      <h2 className="section__title">About</h2>
-      <div className="section__content">
-        {about.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
-        ))}
-      </div>
+      <blockquote className="quote">
+        <p className="quote__text">{about[0]}</p>
+        <cite className="quote__author">— Erwin Schrödinger</cite>
+      </blockquote>
     </section>
   )
 }

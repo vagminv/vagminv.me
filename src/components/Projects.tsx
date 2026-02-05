@@ -12,6 +12,8 @@ function Projects() {
             title={project.title}
             description={project.description}
             tags={project.tags}
+            githubUrl={project.githubUrl}
+            demoUrl={project.demoUrl}
           />
         ))}
       </div>
