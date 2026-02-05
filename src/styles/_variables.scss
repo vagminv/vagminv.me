@@ -1,0 +1,59 @@
+// Color Palette
+$colors: (
+  // Light theme
+  'light-bg': #ffffff,
+  'light-text': #111827,
+  'light-text-secondary': #6b7280,
+  'light-border': #e5e7eb,
+  'light-hover': #f9fafb,
+  'light-accent': #111827,
+
+  // Dark theme
+  'dark-bg': #111827,
+  'dark-text': #f9fafb,
+  'dark-text-secondary': #9ca3af,
+  'dark-border': #374151,
+  'dark-hover': #1f2937,
+  'dark-accent': #f9fafb,
+
+  // Semantic colors
+  'primary': #111827,
+  'secondary': #6b7280,
+  'accent': #3b82f6,
+);
+
+// Typography
+$font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+$font-mono: 'JetBrains Mono', 'Roboto Mono', monospace;
+
+$font-sizes: (
+  'xs': 0.75rem,
+  'sm': 0.875rem,
+  'base': 1rem,
+  'lg': 1.125rem,
+  'xl': 1.25rem,
+  '2xl': 1.5rem,
+  '3xl': 1.875rem,
+  '4xl': 2.25rem,
+);
+
+// Spacing
+$spacing-unit: 0.25rem;
+
+// Breakpoints
+$breakpoints: (
+  'sm': 640px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px,
+);
+
+// Transitions
+$transition-fast: 150ms ease;
+$transition-base: 200ms ease;
+$transition-slow: 300ms ease;
+
+// Shadows
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);

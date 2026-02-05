@@ -1,7 +1,11 @@
 import { Mail, Linkedin, Github, Globe } from 'lucide-react'
 import { socialLinks } from '../data/content'
+import type { LucideProps } from 'lucide-react'
+import type { ForwardRefExoticComponent, RefAttributes } from 'react'
 
-const iconMap = {
+type LucideIcon = ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>
+
+const iconMap: Record<string, LucideIcon> = {
   Mail,
   Linkedin,
   Github,
@@ -10,19 +14,21 @@ const iconMap = {
 
 function SocialLinks() {
   return (
-    <div className="flex items-center gap-2">
+    <div className="social-links">
       {socialLinks.map((link) => {
         const Icon = iconMap[link.icon]
+        if (!Icon) return null;
+
         return (
           <a
             key={link.type}
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-9 h-9 border border-gray-200 rounded-md flex items-center justify-center hover:bg-gray-50 transition-colors"
+            className="social-links__link"
             aria-label={link.type}
           >
-            <Icon size={18} className="text-gray-700" strokeWidth={1.5} />
+            <Icon size={18} strokeWidth={1.5} />
           </a>
         )
       })}

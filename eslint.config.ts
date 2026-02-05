@@ -5,6 +5,8 @@ import pluginReactHooks from 'eslint-plugin-react-hooks'
 import pluginJsxA11y from 'eslint-plugin-jsx-a11y'
 import pluginImport from 'eslint-plugin-import'
 import stylistic from '@stylistic/eslint-plugin'
+import tseslint from '@typescript-eslint/eslint-plugin'
+import tsparser from '@typescript-eslint/parser'
 
 export default [
   js.configs.recommended,
@@ -19,11 +21,18 @@ export default [
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
+      parser: tsparser,
+      parserOptions: {
+        ecmaFeatures: { jsx: true },
+      },
       globals: {
         ...globals.browser,
         ...globals.es2025,
         ...globals.node,
       },
+    },
+    plugins: {
+      '@typescript-eslint': tseslint,
     },
     settings: {
       'react': { version: 'detect' },

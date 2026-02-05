@@ -1,25 +1,27 @@
-export const personalInfo = {
+import type { PersonalInfo, SocialLink, Education, WorkExperience, Project, Contact, Resume } from '../types';
+
+export const personalInfo: PersonalInfo = {
   name: "Vagmin Viswanathan",
   role: "Co-founder @ CaseUp | CS & Physics @ Dartmouth",
   location: "Hanover, NH",
   profileImage: "/pfp.png"
 }
 
-export const socialLinks = [
+export const socialLinks: SocialLink[] = [
   { type: "email", url: "mailto:vagmin.viswanathan@gmail.com", icon: "Mail" },
   { type: "linkedin", url: "https://linkedin.com/in/vagmin-viswanathan", icon: "Linkedin" },
   { type: "github", url: "https://github.com/vagminv", icon: "Github" },
   { type: "website", url: "https://vagminv.me", icon: "Globe" }
 ]
 
-export const about = [
+export const about: string[] = [
   "Co-founder @ CaseUp (Simulating consulting interviews with AI).",
   "Studying Computer Science & Physics @ Dartmouth College.",
   "President of Quantum Computing Club; interested in AI Agents, Deep Learning, and Quantum Systems.",
   "Previously built onboarding agents at Amazon and data pipelines at Millennium Management."
 ]
 
-export const education = {
+export const education: Education = {
   institution: "Dartmouth College",
   logo: "/logos/dartmouth-logo.png",
   degree: "Bachelor of Arts in Computer Science and Physics",
@@ -35,7 +37,7 @@ export const education = {
   ]
 }
 
-export const workExperience = [
+export const workExperience: WorkExperience[] = [
   {
     company: "CaseUp",
     logo: "💼",
@@ -78,7 +80,7 @@ export const workExperience = [
   }
 ]
 
-export const projects = [
+export const projects: Project[] = [
   {
     title: "HardShell",
     description: "Firewall to defend LLM agents against prompt injection attacks in A2A social networks.",
@@ -101,7 +103,7 @@ export const projects = [
   }
 ]
 
-export const hobbies = [
+export const hobbies: string[] = [
   "Chess",
   "Cooking",
   "Coffee",
@@ -110,7 +112,13 @@ export const hobbies = [
   "Hiking"
 ]
 
-export const contact = {
+export const contact: Contact = {
   text: "Reach out via email or connect on LinkedIn/GitHub.",
   email: "vagmin.viswanathan@gmail.com"
+}
+
+export const resume: Resume = {
+  fileName: "Vagmin_Viswanathan_Resume.pdf",
+  path: "/resume.pdf",
+  downloadText: "Download Resume"
 }

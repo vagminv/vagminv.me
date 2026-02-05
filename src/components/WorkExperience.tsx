@@ -3,9 +3,9 @@ import { workExperience } from '../data/content'
 
 function WorkExperience() {
   return (
-    <section>
-      <h2 className="text-lg font-bold text-gray-900 mb-4">Work Experience</h2>
-      <div className="space-y-6">
+    <section className="section">
+      <h2 className="section__title">Work Experience</h2>
+      <div className="experience-list">
         {workExperience.map((job, index) => (
           <ExperienceItem
             key={index}

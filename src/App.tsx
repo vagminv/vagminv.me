@@ -6,12 +6,20 @@ import WorkExperience from './components/WorkExperience'
 import Projects from './components/Projects'
 import Hobbies from './components/Hobbies'
 import Contact from './components/Contact'
+import ThemeToggle from './components/ThemeToggle'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white py-12 px-6">
-      <div className="max-w-2xl mx-auto space-y-12">
-        <Header />
+    <div className="app-container">
+      <div className="app-content">
+        <div className="app-header">
+          <div className="app-header__main">
+            <Header />
+          </div>
+          <div className="app-header__actions">
+            <ThemeToggle />
+          </div>
+        </div>
         <SocialLinks />
         <About />
         <Education />
