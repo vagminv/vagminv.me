@@ -2,7 +2,7 @@
   "name": "starterpack-vagminv",
   "version": "1.0.0",
   "description": "TODO: short project description, some screenshots",
-  "homepage": "https://github.com/dartmouth-cs52/starterpack-vagminv#readme",
+  "homepage": "https://vagminv.me",
   "bugs": {
     "url": "https://github.com/dartmouth-cs52/starterpack-vagminv/issues"
   },
@@ -20,8 +20,9 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview",
+    "type-check": "tsc --noEmit",
     "deploy": "npm run build && gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,6 +30,11 @@
     "@eslint/js": "^9.39.2",
     "@stylistic/eslint-plugin": "^5.7.1",
     "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.2.0",
+    "@types/react": "^19.2.11",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
     "autoprefixer": "^10.4.23",
     "eslint": "^9.39.2",
     "eslint-plugin-import": "^2.32.0",
@@ -40,6 +46,7 @@
     "postcss": "^8.5.6",
     "sass": "^1.97.3",
     "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3",
     "vite": "^7.3.1",
     "vite-plugin-eslint2": "^5.0.4"
   },
@@ -47,6 +54,7 @@
     "@vitejs/plugin-react": "^5.1.2",
     "axios": "^1.13.4",
     "lodash.debounce": "^4.0.8",
+    "lucide-react": "^0.563.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router": "^7.13.0"
